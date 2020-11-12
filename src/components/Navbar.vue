@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="navbar">
         <el-container>
             <el-main style="padding: 30px 20px">
                 <el-row class="navbar-row">
@@ -50,6 +50,9 @@ export default {
 </script>
 
 <style scoped>
+    .navbar {
+        background-color: white;
+    }
     .navbar-row {
         width: 90%;
         margin: 0 auto;
