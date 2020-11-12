@@ -23,7 +23,7 @@
                                 <i class="el-icon-document-checked"></i>
                                 <div>Đơn hàng</div>
                             </div>
-                            <div class="login-item">
+                            <div @click="loginForm" class="login-item">
                                 <i class="el-icon-user"></i>
                                 <div>Đăng nhập</div>
                             </div>
@@ -45,11 +45,28 @@ export default {
         return {
             search: '',
         }
+    },
+    methods: {
+        loginForm() {
+            this.$router.push('/signin')
+        }
     }
 }
 </script>
 
 <style scoped>
+    .promotion-item {
+        cursor: pointer;
+    }
+    .order-item {
+        cursor: pointer;
+    }
+    .login-item {
+        cursor: pointer;
+    }
+    .add-to-cart-item {
+        cursor: pointer;
+    }
     .navbar {
         background-color: white;
     }
