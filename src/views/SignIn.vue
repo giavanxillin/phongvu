@@ -73,7 +73,6 @@ export default {
     font-weight: 500;
     letter-spacing: 3px;
     padding: 30px 10px;
-    
   }
   .login-bg {
     margin: 0 auto;

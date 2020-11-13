@@ -91,14 +91,27 @@ export default {
     .el-icon-discount {
         font-size: 25px;
     }
+    .promotion-item:hover {
+        color: #0d6efd;
+    }
+    
     .el-icon-document-checked {
         font-size: 25px;
+    }
+    .login-item:hover{
+        color: #0d6efd;
     }
     .el-icon-user {
         font-size: 25px;
     }
+    .add-to-cart-item:hover {
+        color: #0d6efd;
+    }
     .el-icon-shopping-cart-2 {
         font-size: 25px;
+    }
+    .order-item:hover {
+        color: #0d6efd;
     }
    
 
