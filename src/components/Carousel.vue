@@ -1,11 +1,35 @@
 <template>
-    <div class="carousel">
+        <div class="carousel">
         <el-carousel height="550px" :interval="5000" arrow="always">
-    <el-carousel-item v-for="c in carousel" :key="c.id">
-      <img :src="c.src" alt="">
-    </el-carousel-item>
-  </el-carousel>
-    </div>
+            <el-carousel-item v-for="c in carousel" :key="c.id">
+            <img :src="c.src" alt="">
+            </el-carousel-item>
+        </el-carousel>
+        <div class="lazyload">
+            <el-row>
+                <el-col :span="6">
+                    <div class="lazyload-image">
+                        <img src="../assets/lazyload1.webp" alt="">
+                    </div>
+                </el-col>
+                <el-col :span="6">
+                    <div class="lazyload-image">
+                        <img src="../assets/lazyload2.webp" alt="">
+                    </div>
+                </el-col>
+                <el-col :span="6">
+                    <div class="lazyload-image">
+                        <img src="../assets/lazyload3.webp" alt="">
+                    </div>
+                </el-col>
+                <el-col :span="6">
+                    <div class="lazyload-image">
+                        <img src="../assets/lazyload4.webp" alt="">
+                    </div>
+                </el-col>
+            </el-row>
+        </div>
+    </div>    
 </template>
 
 <script>
@@ -55,12 +79,41 @@ export default {
     .carousel img {
         width: 100%;
     }
-    
+    .lazyload .el-row {
+        width: 85%;
+        margin: 0 auto;
+    }
+    .lazyload .el-col {
+        padding: 0 10px;
+    }
+    .lazyload {
+        position: absolute;
+        bottom: -60px;
+        z-index: 100;
+        width: 100%;
+    }
+    .lazyload-image img {
+        border-radius: 10px;
+        cursor: pointer;
+    }
+    .lazyload-image img:hover{
+        object-fit: none;
+    }
+    .carousel {
+        position: relative;
+    }
 </style>
 
 <style>
     .carousel .el-carousel__item img {
         height: 100% !important;
         object-fit: cover !important;
+    }
+    .carousel .el-carousel__indicators {
+        position: absolute;
+        bottom: 100px;
+    }
+    .carousel .el-carousel {
+        position: relative;
     }
 </style>
