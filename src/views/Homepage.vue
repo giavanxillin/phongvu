@@ -4,6 +4,7 @@
     <Navbar id="navbar"/>
     <Carousel/>
     <TopSale/>
+    <SuggestedItems/>
     <Footer style="margin-top: 50px;"/>
   </div>
 </template>
@@ -14,6 +15,7 @@ import Header from '@/components/Header.vue'
 import Navbar from '../components/Navbar'
 import Carousel from '../components/Carousel'
 import TopSale from '../components/TopSale'
+import SuggestedItems from '../components/SuggestedItems'
 import Footer from '../components/Footer'
 export default {
   name: 'Home',
@@ -22,6 +24,7 @@ export default {
     Navbar,
     Carousel,
     TopSale,
+    SuggestedItems,
     Footer
   },
 
