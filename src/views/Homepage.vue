@@ -3,6 +3,7 @@
     <Header />
     <Navbar id="navbar"/>
     <Carousel/>
+    <Product/>
     <TopSale/>
     <SuggestedItems/>
     <Footer style="margin-top: 50px;"/>
@@ -17,12 +18,14 @@ import Carousel from '../components/Carousel'
 import TopSale from '../components/TopSale'
 import SuggestedItems from '../components/SuggestedItems'
 import Footer from '../components/Footer'
+import Product from '../components/Product.vue'
 export default {
   name: 'Home',
   components: {
     Header,
     Navbar,
     Carousel,
+    Product,
     TopSale,
     SuggestedItems,
     Footer
