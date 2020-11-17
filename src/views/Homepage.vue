@@ -5,6 +5,7 @@
     <Carousel/>
     <Product/>
     <TopSale/>
+    <Laptop/>
     <SuggestedItems/>
     <Footer style="margin-top: 50px;"/>
   </div>
@@ -16,6 +17,7 @@ import Header from '@/components/Header.vue'
 import Navbar from '../components/Navbar'
 import Carousel from '../components/Carousel'
 import TopSale from '../components/TopSale'
+import Laptop from '../components/Laptop'
 import SuggestedItems from '../components/SuggestedItems'
 import Footer from '../components/Footer'
 import Product from '../components/Product.vue'
@@ -27,6 +29,7 @@ export default {
     Carousel,
     Product,
     TopSale,
+    Laptop,
     SuggestedItems,
     Footer
   },
