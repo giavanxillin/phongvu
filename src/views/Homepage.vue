@@ -6,7 +6,6 @@
     <Product/>
     <TopSale/>
     <Laptop/>
-    <SuggestedItems/>
     <Footer style="margin-top: 50px;"/>
   </div>
 </template>
@@ -18,7 +17,6 @@ import Navbar from '../components/Navbar'
 import Carousel from '../components/Carousel'
 import TopSale from '../components/TopSale'
 import Laptop from '../components/Laptop'
-import SuggestedItems from '../components/SuggestedItems'
 import Footer from '../components/Footer'
 import Product from '../components/Product.vue'
 export default {
@@ -30,7 +28,6 @@ export default {
     Product,
     TopSale,
     Laptop,
-    SuggestedItems,
     Footer
   },
 
@@ -50,7 +47,8 @@ export default {
 .sticky {
   position: fixed;
   top: 0;
-  width: 100%
+  width: 100%;
+  z-index: 1000;
 }
 
 </style>
