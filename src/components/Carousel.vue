@@ -5,6 +5,7 @@
             <img :src="c.src" alt="">
             </el-carousel-item>
         </el-carousel>
+        <div>manh</div>
         <div class="lazyload">
             <el-row>
                 <el-col :span="6">
