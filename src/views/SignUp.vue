@@ -1,6 +1,6 @@
 <template>
-  <div class="login">
-    <div class = "login-bg">
+  <div class="register">
+    <div class = "register-bg">
       <h1 class="shift-right">REGISTER</h1>
     <el-form
       :model="ruleForm"
@@ -11,23 +11,23 @@
       @submit.native.prevent="signin"
     >
       <el-form-item  prop="username">
-        <el-input class="login-input" suffix-icon="el-icon-user"  placeholder="USERNAME" v-model="ruleForm.username"></el-input>
+        <el-input class="register-input" suffix-icon="el-icon-user"  placeholder="USERNAME" v-model="ruleForm.username"></el-input>
       </el-form-item>
 
       <el-form-item  prop="email">
-        <el-input class="login-input" suffix-icon="el-icon-message"  placeholder="EMAIL" v-model="ruleForm.email"></el-input>
+        <el-input class="register-input" suffix-icon="el-icon-message"  placeholder="EMAIL" v-model="ruleForm.email"></el-input>
       </el-form-item>
 
       <el-form-item  prop="phonenumber">
-        <el-input class="login-input" suffix-icon="el-icon-phone-outline"  placeholder="PHONENUMBER" v-model="ruleForm.phonenumber"></el-input>
+        <el-input class="register-input" suffix-icon="el-icon-phone-outline"  placeholder="PHONENUMBER" v-model="ruleForm.phonenumber"></el-input>
       </el-form-item>
 
        <el-form-item  prop="password">
-        <el-input class="login-input" suffix-icon="el-icon-unlock" type="password" placeholder="PASSWORD" v-model="ruleForm.password"></el-input>
+        <el-input class="register-input" suffix-icon="el-icon-unlock" type="password" placeholder="PASSWORD" v-model="ruleForm.password"></el-input>
       </el-form-item>
       
       <el-form-item>
-        <el-button class = "login-button" @click="signin">SIGN UP</el-button>
+        <el-button class = "register-button" @click="signin">SIGN UP</el-button>
       </el-form-item>
     </el-form>
     </div>
@@ -81,7 +81,7 @@ export default {
     letter-spacing: 3px;
     padding: 30px 10px;
   }
-  .login-bg {
+  .register-bg {
     margin: 0 auto;
     width: 38%;
     background-color: rgba(19, 18, 18, 0.6);
@@ -90,14 +90,14 @@ export default {
     bottom: 50%;
     transform: translateX(50%) translateY(50%);
   }
-  .login{
+  .register{
     background: url(../assets/login-bg.jpg);
     height: 100vh;
     background-position: center;
     background-size: cover;
     position: relative
   }
-  .login-button {
+  .register-button {
     padding: 12px 70px;
     background-color: #537b35;
     border-color : #537b35;
@@ -106,7 +106,7 @@ export default {
     color: white;
   }
 
-  .login-button:hover{
+  .register-button:hover{
     background-color: white;
     color: #537b35
   }
@@ -119,53 +119,53 @@ export default {
 </style>
 
 <style >
-  .login-bg .el-icon-user:before{
+  .register-bg .el-icon-user:before{
       font-size: 30px !important;
       position: absolute;
       top: 50%;
       transform: translateY(-50%);
       right: 50%;
   } 
-    .login-bg .el-icon-message:before{
+    .register-bg .el-icon-message:before{
       font-size: 30px !important;
       position: absolute;
       top: 50%;
       transform: translateY(-50%);
       right: 50%;
   } 
-    .login-bg .el-icon-phone-outline:before{
+    .register-bg .el-icon-phone-outline:before{
       font-size: 30px !important;
       position: absolute;
       top: 50%;
       transform: translateY(-50%);
       right: 50%;
   } 
-  .login-bg .el-icon-unlock:before{
+  .register-bg .el-icon-unlock:before{
       font-size: 30px !important;
       position: absolute;
       top: 50%;
       transform: translateY(-50%);
       right: 50%;
   }
-  .login-bg .el-form-item__label{
+  .register-bg .el-form-item__label{
   color: rgb(231, 225, 225);  
   letter-spacing: 2px;
   }
-  .login-bg .el-form-item__content{
+  .register-bg .el-form-item__content{
     margin: 0 !important;
     padding: 10px 0;
   }
-  .login-input .el-input__inner {
+  .register-input .el-input__inner {
   background-color: transparent ;
   padding: 25px 15px;
   color: white;
   border : 3px solid  #537b35
   }
-  .login-input .el-input__inner:hover {
+  .register-input .el-input__inner:hover {
   border : 3px solid  #537b35
 
   }
-  .login-input.is-active .el-input__inner, .el-input__inner:focus {
+  .register-input.is-active .el-input__inner, .el-input__inner:focus {
     border : 3px solid  #537b35;
     outline: 0;
   }
