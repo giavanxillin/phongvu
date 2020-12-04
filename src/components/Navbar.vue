@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="navbar">
         <el-container>
             <el-main style="padding: 30px 20px">
                 <el-row class="navbar-row">
@@ -23,7 +23,7 @@
                                 <i class="el-icon-document-checked"></i>
                                 <div>Đơn hàng</div>
                             </div>
-                            <div class="login-item">
+                            <div @click="loginForm" class="login-item">
                                 <i class="el-icon-user"></i>
                                 <div>Đăng nhập</div>
                             </div>
@@ -45,11 +45,31 @@ export default {
         return {
             search: '',
         }
+    },
+    methods: {
+        loginForm() {
+            this.$router.push('/signin')
+        }
     }
 }
 </script>
 
 <style scoped>
+    .promotion-item {
+        cursor: pointer;
+    }
+    .order-item {
+        cursor: pointer;
+    }
+    .login-item {
+        cursor: pointer;
+    }
+    .add-to-cart-item {
+        cursor: pointer;
+    }
+    .navbar {
+        background-color: white;
+    }
     .navbar-row {
         width: 90%;
         margin: 0 auto;
@@ -71,14 +91,27 @@ export default {
     .el-icon-discount {
         font-size: 25px;
     }
+    .promotion-item:hover {
+        color: #0d6efd;
+    }
+    
     .el-icon-document-checked {
         font-size: 25px;
+    }
+    .login-item:hover{
+        color: #0d6efd;
     }
     .el-icon-user {
         font-size: 25px;
     }
+    .add-to-cart-item:hover {
+        color: #0d6efd;
+    }
     .el-icon-shopping-cart-2 {
         font-size: 25px;
+    }
+    .order-item:hover {
+        color: #0d6efd;
     }
    
 
